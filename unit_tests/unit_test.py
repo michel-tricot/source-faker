@@ -5,6 +5,7 @@
 import jsonschema
 import pytest
 from airbyte_cdk.models import AirbyteMessage, ConfiguredAirbyteCatalog, Type
+
 from source_faker import SourceFaker
 
 

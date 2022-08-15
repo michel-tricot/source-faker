@@ -6,6 +6,7 @@
 import sys
 
 from airbyte_cdk.entrypoint import launch
+
 from source_faker import SourceFaker
 
 if __name__ == "__main__":
