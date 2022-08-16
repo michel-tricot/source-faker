@@ -6,5 +6,6 @@ jobs:
     steps:
     - name: Check out repository code
       uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
     - name: Install
       run: ./abconw install
