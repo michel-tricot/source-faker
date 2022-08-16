@@ -162,9 +162,9 @@ cmd_format() {
 
 help_check="Verify code style & types"
 cmd_check() {
-    black --config pyproject.toml --diff --quiet .
-    pflake8 --exit-zero --config pyproject.toml .
-    isort --settings-file=pyproject.toml --diff --quiet .
+    black --config pyproject.toml --diff --quiet --check .
+    pflake8 --config pyproject.toml .
+    isort --settings-file=pyproject.toml --diff --quiet --check .
     python -m mypy --config-file pyproject.toml .
 }
 
