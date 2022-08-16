@@ -79,6 +79,7 @@ cmd_init() {
 
     cp -i "${AIRBYTE_PATH}/.gitignore" .
     cp -i "${AIRBYTE_PATH}/pyproject.toml" .
+    echo "3.9" > .python-version
 
     # TODO(michel): Remove all unnecessary generated files
     _patch_connector
