@@ -13,4 +13,6 @@ jobs:
       run: ./abconw check
     - name: Test
       run: ./abconw test
-      
+    - name: SAT
+      run: ./abconw sat
+
