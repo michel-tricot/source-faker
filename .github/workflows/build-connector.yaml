@@ -7,5 +7,7 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v3
     - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
     - name: Install
       run: ./abconw install
